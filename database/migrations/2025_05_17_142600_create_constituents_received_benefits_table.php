@@ -15,7 +15,9 @@ return new class extends Migration
             $table->ulid('id')->primary();
             $table->ulid('constituent_id')->index();
             $table->ulid('benefit_id')->index();
-            $table->date('received_at');
+            $table->boolean('status')->nullable()->index();
+            $table->date('received_at')->index();
+            $table->ulid('verified_by_id')->nullable()->index();
             $table->timestamps();
         });
     }
