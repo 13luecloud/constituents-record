@@ -13,6 +13,21 @@ Long before the election, John's supporters are given different advantages to st
 This is the general gist of how local elections work in the Philippines. The scale may vary depending but the idea is as is. 
 
 ### Updates
+**2025/05/19**
+- Updated database schema reference
+    - Added back `barangay_level_users` and `city_level_users` tables.
+    - Added `super_admin` to roles
+        - Role has similar permissions to `admin` but also oversees all accounts in the system.
+    - Roles' new scopes: 
+        - Leader, limited to barangay-level
+        - Admin, limited to city-level
+        - Super Admin, the whole province
+- Create models files for address entities (`city` and `barangay`). 
+- Created `address.php` as config file for `cities` and `barangay`. 
+- Created seeders for address entities.
+- Added migration files for `city_level_users` and `barangay_level_users`.
+
+<br><br>
 **2025/05/18**
 - Updated README file to be more informative. 
 - Updated database schema reference. 
