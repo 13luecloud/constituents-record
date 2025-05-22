@@ -5,13 +5,13 @@ const Barangay = ({ barangays }) => {
             <table>
                 <thead>
                     <tr>
-                        <td>
+                       <td style={{padding: '15px'}}>
                             No.
                         </td>
-                        <td>
+                        <td style={{padding: '15px'}}>
                             Name
                         </td>
-                        <td>
+                       <td style={{padding: '15px'}}>
                             City
                         </td>
                     </tr>
@@ -21,13 +21,13 @@ const Barangay = ({ barangays }) => {
                     {barangays.map((barangay, index) => {
                        return ( 
                             <tr key={barangay.id}>
-                                <td>
+                                <td style={{padding: '15px'}}>
                                     {index+1}.
                                 </td>
-                                <td>
-                                    {barangay.name}
+                                <td style={{padding: '15px'}}>
+                                    {barangay.name} 
                                 </td>
-                                <td>
+                                <td style={{padding: '15px'}}>
                                     {barangay.city.name}
                                 </td>
                             </tr>

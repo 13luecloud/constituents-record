@@ -19,7 +19,7 @@ class GetBarangaysAction
                     $query->select('id', 'name');
                 },
             ])
-            ->orderBy('id')
+            ->orderBy('name')
             ->get();
     }
 }
