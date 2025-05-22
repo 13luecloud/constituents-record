@@ -13,6 +13,10 @@ Long before the election, John's supporters are given different advantages to st
 This is the general gist of how local elections work in the Philippines. The scale may vary depending but the idea is as is. 
 
 ### Updates
+**2025/05/22/** 
+- Created Benefit model file, configuration file, and seeder file.
+
+<br><br>
 **2025/05/19**
 - Updated database schema reference
     - Added back `barangay_level_users` and `city_level_users` tables.
